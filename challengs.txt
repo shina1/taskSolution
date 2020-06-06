@@ -1,0 +1,62 @@
+    ******* First Challenge/Task
+    
+       NODE JS - Create a Simple Form and Submit to a File
+       TASK FOR THE WEEK: 
+ 
+        Subsequent to the class we held on March 21st, 2020, you are required to;
+
+        1) Display a form which prompts you to enter a message when you visit localhost:8080;
+
+        e.g:  Please enter a message below:       
+       Message: an input box is here where user submits their message
+       Submit: a submit button is below.
+
+       So far, you should have a form element which wraps around an input element and a submit button. 
+       Your input element should have a name html property equal to message so you can get the value when you submit
+       Your form should also have a method property equal to "POST" and an action property that equals to "/message"
+        • CLUE: You can use "res.write()" to write html tags like forms, inputs, buttons and send to the browser. Look up html forms and how to send them using res.write() on google. 
+
+    2) When you submit to "/message", you should have your input written to a file named message.txt. You must use the inbuilt node js fs module.
+
+ 
+    • Upload your solution to your github repo and submit the link to that repo.
+
+    DO NOT USE EXPRESS JS. JUST NODE JS.
+
+    BEST OF LUCK !!!!
+
+ ******************  Second challenge/Task ****************************
+ Node JS Task 2: Connect to a database.
+Your task for this week is worth 1.5 point. You are expected to do the following to stand a chance to earn all points. 
+
+1). Download and Install the MongoDB server https://www.mongodb.com/download-center/community. For windows users, you can locate your mongo and mongod .exe terminals at the bin directory in your mongodb file. The mongodb file can be found among your program files at the root directory of your computer. For mac users, here is a link on how to install and locate the mongo and mongod .exe terminals: https://treehouse.github.io/installation-guides/mac/mongo-mac.html. 
+
+You are to take a screenshot showing both .exe files stated above. This screenshot will be uploaded as part of an .md file you will push to a new repository on your github.
+
+2). Write a script to connect to your mongodb database. Your database should be named after your slack username. Use underscores to replace spaces and non-alphanumeric characters that may be found in your slack name for ease. Failure to follow this naming convention will result in a loss of points. 
+
+Run the command highlighted in our previous class to connect to your database but remember to run both your mongod.exe and mongo.exe terminals first. You should console.log “Database created by *insert your slack username*” on your terminal after successful creation. 
+
+In that same vein, take a screenshot(s) showing that you successfully logged “Database created by *insert your slack username*” and attach to the same .md file carrying the first screenshot you provided above. 
+
+3). The above were already done in class so consider this last point a challenge to have you think outside the box. Create a collection called "interns". Save it in a separate js file. You can name this file how you want and it should be different from the file you used to create your database. Running your code should console.log(“Interns collection created”) on successful collection creation. Take a screenshot showing the result of this console.log attach on the same .md file as above. 
+
+4) Create a repo called “mongodb-basics” on github and push your completed task there. It is advisable to have these images attached to your README.md file so it can be the first thing anyone sees when they access your repo. You may need to do further research to find out how to create a readme file containing images. 
+
+NOTE: It is very important I see these images and you need to make sure they show as expected before making a submission. 
+
+Goodluck and once again, I trust you to deliver like you did on your last task. 
+
+
+****************************   Third Challenge/Task ***************
+Nodejs Task 3 - Simple MongoDB CRUD Operations
+This task is worth 1.5 points and strict adherence to the instructions below will guarantee maximum points.
+ 
+1.	While ensuring your MongoDB server is running, in the same folder you used for task 2, rename the JS file that you used in creating interns collection as interns.js. Also create files with names findInterns.js and updateInterns.js.
+2.	Create a new image.md as well, and switch to a new git branch. Name the branch crud-basics
+3.	In the interns.js file, create a collection called myMovies with the following documents inserted: [ {movie: "The Banker", year: "2020", rating: 8},  {movie: "Bad Boys", year: "2020", rating: 7}, {movie: "The Hunt", year: "2020", rating: 7}, {movie: "Bloodshot", year: "2020", rating: 7.5}, {movie: "First Cow", year: "2020", rating: 6.5} ]. Your function should print the result of your insertion to the console. Take a screenshot and include it in your image.md file,
+4.	In the findInterns.js file, write a function making use of appropriate methods and queries to return (a) the first document in the collection (b) all movies with a rating of 7 and (c) use a projection object to return only movie titles and nothing else. Take a screenshot of your query results and include it in your image.md file.
+5.	Finally, in your updateInterns.js file, update the movie with title "The Banker", to any movie of your choice, ensure all other properties (year and rating) are updated accordingly. Log the updated collection to the console and take a screenshot. Include your screenshot in your image.md file.
+6.	Push your branch to the mongodb-basics repo you've created earlier and submit the github link to the branch you pushed. For emphasis, you are required to submit the github link to the branch (crud-basics) you pushed.
+All the best
+
