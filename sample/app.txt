@@ -1,1 +1,56 @@
-utf-8
+[
+  {
+    "id": "1",
+    "message": "hello world"
+  },
+  {
+    "name": "wale1",
+    "uName": "luku",
+    "message": "my third message"
+  },
+  {
+    "name": "wale11",
+    "uName": "luku",
+    "message": "my third message"
+  },
+  {
+    "name": "wale111",
+    "uName": "saka",
+    "message": "my third message from you"
+  },
+  {
+    "name": "wale1111",
+    "uName": "lanre saka",
+    "message": "our third message from you"
+  },
+  {
+    "name": "wale11111",
+    "uName": "sam",
+    "message": "please send those file to my email"
+  },
+  {
+    "id": null,
+    "uName": "shegun",
+    "message": "how are you dude"
+  },
+  {
+    "id": 1,
+    "uName": "kunle",
+    "message": "winter is coming"
+  },
+  {
+    "id": 2,
+    "uName": "wonder",
+    "message": "message to wonder woman."
+  },
+  {
+    "id": 3,
+    "uName": "stark",
+    "message": "Tony stark is the real hero."
+  },
+  {
+    "id": 4,
+    "uName": "cap",
+    "message": "captian america is stronger than thanos"
+  }
+]

@@ -9,11 +9,11 @@ const server = http.createServer((req,res)=>{
      // i first check if its a pst request once a user click on the submit button.
     if (req.method === 'POST') {
         collectRequestData(req, result => {
-            const newMessage = newData[newData.length -1].name + 1;
-            const appendMessage = Object.assign({name : newMessage}, result) 
+            const newMessage = newData[newData.length -1].id + 1;
+            const appendMessage = Object.assign({id : newMessage}, result) 
            newData.push(appendMessage);
         //    console.log(newData);
-           file.writeFile(`${__dirname}/app.json`, JSON.stringify(newData), err => {
+           file.writeFile(`${__dirname}/app.json`, JSON.stringify(newData, null, 2), err => {
            
             res.json({
                 status : "success",
@@ -63,6 +63,12 @@ function collectRequestData(request,callback){
     }
 
 }
+
+const messData = file.readFileSync(`${__dirname}/app.json`);
+const messDataObj = JSON.parse(messData);
+const realMess = JSON.stringify(messDataObj, null,2);
+file.writeFileSync(`${__dirname}/app.txt`, `${realMess}`,'utf-8');
+// console.log(messDataObj.message);
 
 server.listen(5050, 'localhost', ()=>{
     console.log('server is listnening at port 5050');
